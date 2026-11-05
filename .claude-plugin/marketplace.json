@@ -1,6 +1,7 @@
 {
   "name": "qa-kit-marketplace",
   "owner": { "name": "akennich" },
+  "description": "Marketplace for the qa-kit plugin: a summarize-changes command and a code-reviewer subagent.",
   "plugins": [
     {
       "name": "qa-kit",
