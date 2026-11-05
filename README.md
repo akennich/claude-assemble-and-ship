@@ -9,6 +9,12 @@ A small Claude Code plugin with a slash command and a subagent for reviewing you
 | `/qa-kit:summarize-changes` | Slash command | Summarises the changes on the current branch: one line per touched file, short enough for a pull-request description. |
 | `code-reviewer` | Subagent | Reviews recent changes for bugs, missing error handling and unclear names. Returns a list grouped by severity (high, medium, low). |
 
+## Install
+
+```
+/plugin install qa-kit --marketplace akennich/claude-assemble-and-ship
+```
+
 ## Usage
 
 Load the plugin from the repo root:
@@ -25,6 +31,7 @@ claude --plugin-dir .
 
 ```
 .claude-plugin/plugin.json   # manifest
+.claude-plugin/marketplace.json   # marketplace listing
 commands/summarize-changes.md
 agents/code-reviewer.md
 ```
